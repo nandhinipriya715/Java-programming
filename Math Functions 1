@@ -1,0 +1,21 @@
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner A=new Scanner(System.in);
+        float a=A.nextFloat();
+        int b=A.nextInt();
+        int c=A.nextInt();
+        int d=A.nextInt();
+        System.out.printf("%d",(int)a);
+        System.out.printf("\n%d",(int)Math.ceil(a));
+        System.out.printf("\n%.0f",Math.sqrt(b));
+        System.out.printf("\n%d",(int)Math.pow(c,d));
+    }
+}
