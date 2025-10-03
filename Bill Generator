@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner A=new Scanner(System.in);
+        int a=A.nextInt();
+        int b=A.nextInt();
+        int c=A.nextInt();
+        int Total=(a*100)+(b*20)+(c*10);
+        System.out.println("Bill Details"+"\nNo of pizzas:"+a+"\nNo of puffs:"+b+"\nNo of cooldrinks:"+c+"\nTotal price="+Total+"\nENJOY THE SHOW!!!");    
+    }
+}
