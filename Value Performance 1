@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner A=new Scanner(System.in);
+        int a=A.nextInt();
+        float b=A.nextFloat();
+        System.out.printf("%d",a);
+        System.out.printf("\n%.2f",b);
+    }
+}
