@@ -1,0 +1,51 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner A=new Scanner(System.in);
+        int a=A.nextInt();
+        int b=A.nextInt();
+        char c=A.next().charAt(0);
+        double result;
+        switch(c){
+                case'+':
+                    result=a+b;
+                    System.out.println("Addition of two number is "+result);
+                    break;
+                case'-':
+                    result=a-b;
+                    System.out.println("Subtraction of two number is "+result);
+                    break;
+                case'*':
+                    result=a*b;
+                    System.out.println("Multiplication of two number is "+result);
+                    break;
+                case'/':
+                    if(b!=0){
+                        result=(double)a/b;
+                        System.out.println("Division of two number is "+result);
+                    }
+                                           
+                        
+                                           
+                    else{
+                        System.out.println("Divide by zero is not possible");
+                    }
+                case'%':
+                        result=a%b;
+                        System.out.println("modulo of two number is"+result);
+                default:
+                        System.out.println("Invalid Input");
+                
+        }
+    }
+}
+                
+        
+        
+    
