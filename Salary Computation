@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner A=new Scanner(System.in);
+        int a=A.nextInt();
+        double hda,da;
+        if(a<15000){
+            hda=0.15*a;
+            da=0.90*a;
+        }
+        else{
+            hda=5000;
+            da=0.98*a;
+        }
+        double gs=a+hda+da;
+        System.out.printf("%.2f",gs);
+    }
+}
