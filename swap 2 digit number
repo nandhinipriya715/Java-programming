@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner A=new Scanner(System.in);
+        int a=A.nextInt();
+        String b=Integer.toString(a);
+        if(b.length()>=2){
+            char fr=b.charAt(0);
+            char sec=b.charAt(1);
+            System.out.println(""+sec+fr);
+        }
+        else{
+            System.out.println("STDOUT");
+        }
+        }
+    }
