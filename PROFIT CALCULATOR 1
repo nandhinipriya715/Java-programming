@@ -1,17 +1,23 @@
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
-int main() {
-    int x,a,b;
-    scanf("%d",&x);
-    scanf("%d",&a);
-    scanf("%d",&b);
-    float profit=(x*a)-(x*b+100);
-    printf("Number of copies sold:%d",x);
-    printf("\nCost of each copy:%d",a);
-    printf("\nCost spent by agency on each newspaper:%d",b);
-    printf("\nThe profit obtained is Rs.%.2f",profit);
-    return 0;
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner A=new Scanner(System.in);
+        int x=A.nextInt();
+        int a=A.nextInt();
+        int b=A.nextInt();
+        float profit=(x*a)-(x*b+100);
+        System.out.printf("Number of copies sold:%d",x);
+        System.out.printf("\nCost of each copy:%d",a);
+        System.out.printf("\nCost spent by agency on each newspaper:%d",b);
+        System.out.printf("\nThe profit obtained is Rs.%.2f",profit);
+    
+}
+
+        
 }
