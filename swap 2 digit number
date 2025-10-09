@@ -8,11 +8,11 @@ public class Solution {
 
     public static void main(String[] args) {
         Scanner A=new Scanner(System.in);
-        int a=A.nextInt();
-        String b=Integer.toString(a);
-        if(b.length()>=2){
-            char fr=b.charAt(0);
-            char sec=b.charAt(1);
+        String a=A.nextLine();
+        
+        if(a.length()>=2){
+            char fr=a.charAt(0);
+            char sec=a.charAt(1);
             System.out.println(""+sec+fr);
         }
         else{
