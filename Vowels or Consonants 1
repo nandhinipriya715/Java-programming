@@ -7,9 +7,9 @@ public class Solution {
         Scanner A=new Scanner(System.in);
         char a=A.next().charAt(0);
         int vow=0,con=0;
-        char Uppercase=Character.toUpperCase(a);
         
-        if(Uppercase=='A'||Uppercase=='E'||Uppercase=='I'||Uppercase=='O'||Uppercase=='U'){
+        if(a=='A'||a=='E'||a=='I'||a=='O'||a=='U'
+          ||a=='a'||a=='e'||a=='i'||a=='o'||a=='u'){
             System.out.println("The Character "+a+" is Vowel");
         }
         else{
