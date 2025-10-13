@@ -1,0 +1,42 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner A=new Scanner(System.in);
+        int size=A.nextInt();
+        int arr[]=new int[size];
+        for(int i=0;i<size;i++){
+            arr[i]=A.nextInt();
+        }
+        int oddcount=0;
+        int evencount=0;
+        for(int i=0;i<size;i++){
+        if(i%2!=0){
+            oddcount++;
+        }
+            else{
+                evencount++;
+            }
+        }
+        int j=0,n=0;
+         int arr1[]=new int[oddcount];
+         int arr2[]=new int[evencount];
+        for(int i=0;i<size;i++){
+            if(i%2!=0)
+            arr1[j++]=arr[i];
+        }
+        for(int i=0;i<size;i++){
+            if(i%2==0)
+            arr2[n++]=arr[i];
+        }
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+        int sum=arr1[1]+arr2[evencount-2];
+        System.out.println("Sum="+sum);
+}
+}
