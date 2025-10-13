@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner A=new Scanner(System.in);
+        String s=A.nextLine();
+        int pos=0;
+        pos=s.length();
+        for(int i=pos-1;i>=0;i--){
+            char a=s.charAt(i);
+            System.out.print(a);
+        }
+    }
+}
