@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner A=new Scanner(System.in);
+        String a=A.nextLine();
+        int v=0,c=0,d=0,s=0;
+        for(int i=0;i<a.length();i++){
+            int b=a.charAt(i);
+            if(b=='A'||b=='E'||b=='I'||b=='O'||b=='U'||b=='a'||b=='e'||b=='i'||b=='o'||b=='u'){
+                v++;
+            }
+            else if(b>='A'&&b<='Z'||b>='a'&&b<='z'){
+                c++;
+            }
+            else if(b>='0'&&b<='9'){
+                d++;
+            }
+            else{
+                s++;
+            }
+        }
+        System.out.println("vowels:"+v);
+        System.out.println("consonants:"+c);
+        System.out.println("digits:"+d);
+        System.out.println("special characters:"+s);
+    }
+}
