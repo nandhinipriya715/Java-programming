@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    static int sum(int b){
+        if(b==0){
+            return 0;
+            }
+        else{
+            return 1+sum(b/10);
+        }
+    }
+    public static void main(String[] args) {
+        Scanner A=new Scanner(System.in);
+        String a=A.nextLine();
+        int b=Integer.valueOf(a);
+        int res=sum(b);
+            System.out.println("The Count the digits: "+res);
+        }
+    }
